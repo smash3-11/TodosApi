@@ -1,0 +1,149 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+    /* width: 100%; */
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 65px;
+    padding: 0px 0 20px;
+    
+    color: #A5A5B4;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    
+    
+}
+h1 {
+    text-align: center;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+
+    padding: 20px;
+    /* display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px; */
+}
+@media (max-width: 768px) {
+    .box {
+        display: grid;
+        grid-template-columns: 1fr;
+
+        font-size: 14px;
+    }
+}
+
+.title:nth-child(1) {
+    color: #ffc700;
+}
+.title:nth-child(2) {
+    color: #A5A5B4;
+}
+.title:nth-child(3) {
+    color: #A5A5B4;
+}
+.title {
+    font-size: 24px;
+    margin: 30px 0;
+    color: #A5A5B4;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.item {
+    /* width: 567px; */
+    width: 100%;
+    height: 111px;
+    padding: 20px;
+    border-radius: 15px;
+    background: #F0F0F0;
+}
+.item h3::first-letter {
+    text-transform: uppercase;
+    
+}
+.item p {
+    padding-top: 5px;
+    font-weight: 500;
+}
+
+.description {
+    color: #A5A5B4;
+}
+
+.check_title {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+.checkbox {
+    width: 16px;
+    height: 16px;
+    border-radius: 5px;
+    border: 1px solid #A5A5B4;
+    cursor: pointer;
+}
+
+.checkbox_selected {
+    background: #ffc700;
+}
+
+.task {
+    padding-left: 24px;
+}
+
+.active {
+    color: #ffc700;
+}
+
+.when {
+    color: #ffc700;
+    font-weight: 500;
+}
+
+.right {
+    cursor: pointer;
+}
+.left {
+    cursor: pointer;
+}
+
+.paginate {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+
+    padding: 20px 0;
+}
+.paginate button {
+    border: none;
+    color: #ffc700;
+    background: white;
+    cursor: pointer; 
+}
